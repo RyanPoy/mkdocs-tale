@@ -1,2 +1,3 @@
-# tale
-a theme of mkdocs, it's modified from https://github.com/chesterhow/tale 
+# mkdocs_tale
+
+Tale is a theme of mkdocs, it's modified from [Tale](https://github.com/chesterhow/tale)

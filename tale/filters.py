@@ -1,16 +1,16 @@
 # neotale/filters.py
 from datetime import datetime, date
 
-def format_date(datestr: str, format: str = '%B %d, %Y') -> str:
+def format_date(datestr: str, format: str = '%b %d, %Y') -> str:
     date_obj = None
     if isinstance(datestr, (date, datetime)):
         date_obj = datestr
     elif isinstance(datestr, str):
         try:
-            date_obj = datetime.strptime("%Y-%m-%d")
-        except:
+            date_obj = datetime.strptime(datestr, "%Y/%m/%d")
+        except Exception as ex:
             try:
-                date_obj = datetime.strptime("%Y/%m/%d")
+                date_obj = datetime.strptime(datestr, "%y-%m-%d")
             except:
                 date_obj = None
     if date_obj is None:

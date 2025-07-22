@@ -3,6 +3,11 @@ name = "mkdocs-tale"
 version = "0.1.0"
 description = "A simple theme of mkdocs"
 readme = "README.md"
+license = { text = "MIT" }
+keywords = ["mkdocs", "plugin", "theme"]
+authors = [
+  { name = "Your Name", email = "your@email.com" }
+]
 requires-python = ">=3.13"
 dependencies = [
     "mkdocs>=1.6.1",
@@ -17,3 +22,7 @@ tale = "tale.plugins:TalePlugin"
 
 [project.entry-points."mkdocs.themes"]
 tale = "tale.templates"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,7 @@
+[project]
+name = "mkdocs-tale"
+version = "0.1.0"
+description = "A simple theme of mkdocs"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []

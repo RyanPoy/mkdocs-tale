@@ -24,7 +24,13 @@ html {
 }
 
 body {
-    -webkit-text-size-adjust: 100%
+    background-color: #353535; 
+    padding: 1.4rem 1.3rem;
+    -webkit-text-size-adjust: 100%;
+}
+
+.body-wrapper {
+    background-color: #F9F9F9;
 }
 
 h1,h2,h3,h4,h5,h6 {

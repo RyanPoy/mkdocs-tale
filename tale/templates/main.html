@@ -1,7 +1,7 @@
 {% extends "base.html" %} 
 
 {% block main %}
-<div class="post">
+<div class="post highlight">
   <div class="post-info">
     <span>Written by</span>
     {{config.site_author}}
@@ -15,6 +15,8 @@
   <h1 class="post-title">{{page.title}}</h1>
   <div class="post-line"></div>
 
-  {{page.content}}
+  <div class="markdown-body">
+    {{page.content}}
+  </div>
 </div>
 {% endblock %}

@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block htmltitle %}{% endblock %}</title>
 
-  <link rel="stylesheet" href="/assets/styles/main.css">
+  <link rel="stylesheet" href="{{ 'assets/styles/main.css' | url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" href="{{ 'assets/styles/github-markdown-light.min.css' | url }} ">
     {% block extra_head %}{% endblock %}
 </head>
 <body>

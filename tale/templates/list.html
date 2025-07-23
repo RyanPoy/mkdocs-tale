@@ -10,13 +10,11 @@
     {% for page_item in sorted_pages %}
       {% if page_item.url.split('/') | length > 2 and page_item.url != page.url and page_item.url.startswith(page.url) %}
         <a href="{{page_item.url|url}}" class="catalogue-item">
-          <div>
             <!-- <span class="catalogue-pinned">Pinned ·</span> -->
             <time datetime="{{page_item.date}} 00:00:00 +0000" class="catalogue-time">{{page_item.meta.date| format_date}}</time>
             <h1 class="catalogue-title">{{page_item.title}}</h1>
             <div class="catalogue-line"></div>
-
-            <p>{{page_item.content.split('<!--')[0]}}</p>
+            <p class="highlight">{{page_item.content.split('<!--')[0]}}</p>
           </div>
         </a>
       {% endif %}

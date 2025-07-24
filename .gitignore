@@ -3,5 +3,6 @@
 __pycache__
 *.pyc
 uv.lock
-
+dist/
+mkdocs_tale.egg-info/
 

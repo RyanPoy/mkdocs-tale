@@ -466,10 +466,19 @@ main,footer,.nav-container{
 aside.toc {
     flex: 0 0 20%;
     position: sticky;
-    top: 8rem;
+    top: 1rem;
     height: max-content;
-    padding-left: 0.6rem;
-    border-left: 2px solid #aaa;
+    padding-left: 0;
+    border-left: 1px solid #aaa;
+    font-size: 12px;
+}
+aside.toc ul {
+    padding-left: 1rem;
+}
+aside.toc ul, aside.toc li {
+    list-style: none;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
 }
 
 /* 移动端变成块布局，去掉flex */

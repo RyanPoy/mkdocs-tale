@@ -1,4 +1,4 @@
-# neotale/filters.py
+# filters.py
 from datetime import datetime, date
 from .utils import purify_date
 
